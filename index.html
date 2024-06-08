@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://kit.fontawesome.com/77cc7d33a2.js" crossorigin="anonymous"></script>
+  <title>Instagram Dupe</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-light justify-content-between px-4">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://w7.pngwing.com/pngs/274/823/png-transparent-icon-essential-instagram-2016-app-logo-vector-images-social-networks.png"
+        class="logo1">
+      <img src="https://www.vectorlogo.zone/logos/instagram/instagram-wordmark.svg" class="logo">
+    </a>
+    <form class="d-flex">
+      <button type="button" class="btn btn-success me-4" data-bs-toggle="modal" data-bs-target="#createnewpost">
+        Create new post
+      </button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+    </form>
+  </nav>
+
+
+  <div class="modal fade" id="createnewpost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body caption">
+          Caption:
+        </div>
+        <div class="input-group my-0">
+          <textarea class="form-control text-secondary mx-3 my-2"
+            aria-label="With textarea"> Add the caption of your post here</textarea>
+        </div>
+        <div class="d-flex px-3 mb-4">
+          <button type="button" class="btn btn-light border"><i class="fa-solid fa-camera"></i></button>
+          <button type="button" class="btn btn-light ms-2 border"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <ul class="nav nav-tabs justify-content-center id=myTab my-2" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container">
+        <div class="row mx-2">
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1717620378082-b2b48c2a8b93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"
+              class="img-fluid"></div>
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1717155736971-b53c6dfd940f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+          <div class="col-4 custom-margin"><img
+              src="https://plus.unsplash.com/premium_photo-1707203459191-2abd0418607c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+        </div>
+        <div class="row mx-2">
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1716369415883-db404f0a8425?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1717330551200-83da9ed42835?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid "></div>
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1717446945082-2dccda942c56?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2N3x8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+        </div>
+        <div class="row mx-2">
+          <div class="col-4 custom-margin"><img
+              src="https://plus.unsplash.com/premium_photo-1714839369468-cceb97dc742f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+          <div class="col-4 custom-margin"><img
+              src="https://plus.unsplash.com/premium_photo-1683141007892-52790d3a449b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NXx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+          <div class="col-4 custom-margin"><img
+              src="https://images.unsplash.com/photo-1716369415883-db404f0a8425?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="tab-pane fade card-margin" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+      tabindex="0">
+      <!-- first card -->
+      <div class="card container p-0 card-margin" style="width: 30rem;">
+        <div class="row p-1">
+          <div class="d-flex pt-2 justify-content-between">
+            <h5 class="card-title p-0">Beautiful flowers! </h5>
+            <p class="card-title p-1 text-secondary light text-end">8/26</p>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1717620378082-b2b48c2a8b93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8"
+          class="card-img-top rounded-0" alt="...">
+        <div class="card-body px-2 pt-1">
+          <p class="p-0 m-0 like-font-size bold"> 300 Likes</p>
+          <p class="card-text paragraph-size">This is an example of a very good photo you can post on instagram.</p>
+        </div>
+      </div>
+
+      <!-- second card -->
+      <div class="card container p-0 card-margin" style="width: 30rem;">
+        <div class="row p-1">
+          <div class="d-flex pt-2 justify-content-between">
+            <h5 class="card-title p-0">Visit to Tokyo</h5>
+            <p class="card-title p-1 text-secondary light text-end">8/26</p>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1717155736971-b53c6dfd940f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top rounded-0" alt="...">
+        <div class="card-body px-2 pt-1">
+          <p class="p-0 m-0 like-font-size bold"> 300,000 Likes</p>
+          <p class="card-text paragraph-size">This is an example of a very good photo you can post on instagram.</p>
+        </div>
+      </div>
+
+      <!-- third card -->
+      <div class="card container p-0 card-margin" style="width: 30rem;">
+        <div class="row p-1">
+          <div class="d-flex pt-2 justify-content-between">
+            <h5 class="card-title p-0">Beach vacation</h5>
+            <p class="card-title p-1 text-secondary light text-end">8/26</p>
+          </div>
+        </div>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1707203459191-2abd0418607c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top rounded-0" alt="...">
+        <div class="card-body px-2 pt-1">
+          <p class="p-0 m-0 like-font-size bold"> 3,000 Likes</p>
+          <p class="card-text paragraph-size">This is an example of a very good photo you can post on instagram.</p>
+        </div>
+      </div>
+
+      <!-- fourth card -->
+      <div class="card container p-0 card-margin-last" style="width: 30rem;">
+        <div class="row p-1">
+          <div class="d-flex pt-2 justify-content-between">
+            <h5 class="card-title p-0">Volcanos!!</h5>
+            <p class="card-title p-1 text-secondary light text-end">8/26</p>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1716369415883-db404f0a8425?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top rounded-0" alt="...">
+        <div class="card-body px-2 pt-1">
+          <p class="p-0 m-0 like-font-size bold"> 3,000,000 Likes</p>
+          <p class="card-text paragraph-size">This is an example of a very good photo you can post on instagram.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
